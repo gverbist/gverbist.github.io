@@ -15,7 +15,8 @@ timeZone = "Europe/Brussels"
 # contentTypeName = "posts"
   showMenuItems = 5
   centerTheme = true
-  autoCover = false
+  autoCover = true
+  cover = "/hello.jpg"
   dateFormat = "02-01-2006"
   [params.logo]
     logotext = "Bist.be"

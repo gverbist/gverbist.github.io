@@ -3,18 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-11-29T13:57:07+01:00</lastmod>
+    <lastmod>2024-11-29T16:25:23+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/geeklife/</loc>
+    <lastmod>2024-11-29T16:25:23+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-11-29T16:25:23+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/linux/</loc>
+    <lastmod>2024-11-29T15:02:49+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-11-29T15:02:49+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/tuxedo/</loc>
+    <lastmod>2024-11-29T15:02:49+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/gaming/</loc>
     <lastmod>2024-11-29T13:57:07+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-11-29T13:57:07+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/selene/</loc>
-    <lastmod>2024-11-29T13:57:07+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-11-29T13:57:07+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/pages/apps/</loc>
@@ -27,9 +36,6 @@
     <lastmod>2024-11-28T21:05:37+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/docker/</loc>
-    <lastmod>2024-11-28T21:05:37+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/linux/</loc>
     <lastmod>2024-11-28T21:05:37+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/self-hosting/</loc>

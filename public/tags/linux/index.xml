@@ -7,7 +7,68 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2024 Bist.be</copyright>
-    <lastBuildDate>Thu, 28 Nov 2024 21:05:37 +0100</lastBuildDate><atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Nov 2024 15:02:49 +0100</lastBuildDate><atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tuxedo and Arch</title>
+      <link>http://localhost:1313/posts/tuxedo/</link>
+      <pubDate>Fri, 29 Nov 2024 15:02:49 +0100</pubDate>
+      
+      <guid>http://localhost:1313/posts/tuxedo/</guid>
+      <description>&lt;h1 id=&#34;from-macos-to-arch-linux-embracing-freedom-on-a-tuxedo-laptop&#34;&gt;From macOS to Arch Linux: Embracing Freedom on a Tuxedo Laptop&lt;/h1&gt;
+&lt;p&gt;For years, I lived in Apple’s walled garden, wielding a MacBook with macOS like a good digital citizen. It was elegant, polished, and maddeningly limiting. Over time, my frustrations grew louder than the chime on startup. I didn’t want a machine that worked &lt;em&gt;despite&lt;/em&gt; me; I wanted one that worked &lt;em&gt;with&lt;/em&gt; me. Enter the Tuxedo laptop and Arch Linux—a duo that let me reclaim control over my workflow, align with my love for Suckless software, and embrace a keyboard-driven existence.&lt;/p&gt;</description>
+      <content>&lt;h1 id=&#34;from-macos-to-arch-linux-embracing-freedom-on-a-tuxedo-laptop&#34;&gt;From macOS to Arch Linux: Embracing Freedom on a Tuxedo Laptop&lt;/h1&gt;
+&lt;p&gt;For years, I lived in Apple’s walled garden, wielding a MacBook with macOS like a good digital citizen. It was elegant, polished, and maddeningly limiting. Over time, my frustrations grew louder than the chime on startup. I didn’t want a machine that worked &lt;em&gt;despite&lt;/em&gt; me; I wanted one that worked &lt;em&gt;with&lt;/em&gt; me. Enter the Tuxedo laptop and Arch Linux—a duo that let me reclaim control over my workflow, align with my love for Suckless software, and embrace a keyboard-driven existence.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;why-i-left-macos&#34;&gt;Why I Left macOS&lt;/h2&gt;
+&lt;p&gt;At first glance, macOS seems like the perfect operating system for someone who appreciates minimalism and efficiency. It’s polished to a mirror shine, but that’s the problem: &lt;strong&gt;it’s a mirror you can’t scratch.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;heres-what-drove-me-away&#34;&gt;Here’s what drove me away:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;The Mouse-First Mentality&lt;/strong&gt;: macOS loves its trackpads, gestures, and a UX that screams &amp;ldquo;click here.&amp;rdquo; For someone like me—who thrives in a keyboard-driven workflow—this was friction I didn’t need.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Locked-In Ecosystem&lt;/strong&gt;: macOS doesn’t just assume control; it demands it. Apps behave how Apple wants, not how &lt;em&gt;I&lt;/em&gt; want.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Heavyweight Software&lt;/strong&gt;: Every macOS update seemed to bring more bloat. I didn’t want animations and notifications; I wanted lean, efficient performance.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I needed an operating system that let me strip away the unnecessary, tailor the essential, and move at the speed of thought.&lt;/p&gt;
+&lt;h2 id=&#34;httpswwwtecmintcomwp-contentuploads201904ratpoison-window-managerjpeg&#34;&gt;&lt;img src=&#34;https://www.tecmint.com/wp-content/uploads/2019/04/Ratpoison-Window-Manager.jpeg&#34; alt=&#34;&#34;&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;why-arch-and-why-tuxedo&#34;&gt;Why Arch and Why Tuxedo?&lt;/h2&gt;
+&lt;p&gt;I’ve been an &lt;strong&gt;Arch Linux&lt;/strong&gt; user for years, so the operating system choice was a no-brainer. It’s fast, endlessly customizable, and stays out of your way. What changed was my hardware.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;Tuxedo Laptop&lt;/strong&gt; caught my attention for its focus on Linux-first hardware. No more battling EFI issues or wondering if my Wi-Fi card would cooperate. With the Tuxedo, I could focus on what mattered: &lt;strong&gt;building my ideal computing environment.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;what-i-value-in-a-machine&#34;&gt;What I Value in a Machine&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Linux at Its Core&lt;/strong&gt;: No surprises here. The hardware is designed to play nice with Linux, making setup and long-term maintenance effortless.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lightweight Hardware, Heavyweight Power&lt;/strong&gt;: Whether coding, gaming, or configuring yet another dotfile, the Tuxedo InfinityBook strikes the perfect balance.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;httpswwwtuxedocomputerscomstore_files1imagesproduct_imagesextrapulse14-gen4_herobannerjpg&#34;&gt;&lt;img src=&#34;https://www.tuxedocomputers.com/store_files/1/images/product_images/extra/pulse14-gen4_herobanner.jpg&#34; alt=&#34;&#34;&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;why-tiling-window-managers&#34;&gt;Why Tiling Window Managers?&lt;/h2&gt;
+&lt;p&gt;If there’s a polar opposite to macOS’s glossy, window-dragging interface, it’s a tiling window manager. I’ve always been drawn to the simplicity and efficiency of tools like &lt;strong&gt;dwm&lt;/strong&gt; and &lt;strong&gt;bspwm&lt;/strong&gt;. Why? Because they do &lt;em&gt;exactly&lt;/em&gt; what I want and nothing more.&lt;/p&gt;
+&lt;h3 id=&#34;the-tiling-philosophy&#34;&gt;The Tiling Philosophy&lt;/h3&gt;
+&lt;p&gt;A tiling window manager is a statement: &lt;strong&gt;My workflow isn’t an afterthought. It’s the foundation.&lt;/strong&gt; Everything is organized, spatially consistent, and instantly accessible. With a few keystrokes, I can summon, move, or close windows without ever reaching for the mouse.&lt;/p&gt;
+&lt;p&gt;It’s not just about speed; it’s about &lt;strong&gt;autonomy.&lt;/strong&gt; In the tiling world, &lt;em&gt;you&lt;/em&gt; decide the layout. Contrast this with macOS’s love affair with floating windows, where apps constantly demand to be resized and repositioned.&lt;/p&gt;
+&lt;h2 id=&#34;httpsrepository-imagesgithubusercontentcom405523738035273b6-276a-4837-a94c-1ebaf4d4c8e8&#34;&gt;&lt;img src=&#34;https://repository-images.githubusercontent.com/405523738/035273b6-276a-4837-a94c-1ebaf4d4c8e8&#34; alt=&#34;&#34;&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;suckless-software-and-minimalism&#34;&gt;Suckless Software and Minimalism&lt;/h2&gt;
+&lt;p&gt;For someone like me—who loves Suckless software—the shift away from macOS felt inevitable. Tools like &lt;strong&gt;dwm&lt;/strong&gt;, &lt;strong&gt;st&lt;/strong&gt;, and &lt;strong&gt;dmenu&lt;/strong&gt; embody everything I want in software:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Minimalist Code&lt;/strong&gt;: If you can’t read and understand the source, is it even yours? Suckless software is lean, hackable, and designed to be configured at the source level.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Keyboard-Driven Workflows&lt;/strong&gt;: Everything is a keystroke away. The mouse? It’s just another dust collector on my desk.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Philosophical Alignment&lt;/strong&gt;: These tools don’t try to be everything for everyone. They do one thing exceptionally well, and they let &lt;em&gt;you&lt;/em&gt; handle the rest.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Moving to a Tuxedo laptop running Arch allowed me to double down on these principles. My setup is now a reflection of &lt;em&gt;me&lt;/em&gt;, not the whims of a corporation.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;living-the-dream-my-keyboard-centric-workflow&#34;&gt;Living the Dream: My Keyboard-Centric Workflow&lt;/h2&gt;
+&lt;p&gt;Switching to a Tuxedo laptop running Arch wasn’t just a hardware upgrade; it was a lifestyle upgrade. Every piece of my workflow is optimized for efficiency:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Neovim for Coding&lt;/strong&gt;: With Lua configurations and plugins tailored to my needs, Neovim is the ultimate development environment.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;dwm for Window Management&lt;/strong&gt;: No unnecessary UI elements, no wasted pixels—just pure productivity.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Custom Keybindings&lt;/strong&gt;: Everything from launching applications to controlling media happens via the keyboard.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Self-Hosted Tools&lt;/strong&gt;: From running containers to managing Kubernetes clusters, my Tuxedo laptop is the command center for all my projects.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This setup makes macOS feel like a toy in comparison. It’s not just faster; it’s smarter. It works how &lt;em&gt;I&lt;/em&gt; think, not how a UX designer thinks I should.&lt;/p&gt;
+&lt;h2 id=&#34;httpsireddit3spdyw6d3wca1png&#34;&gt;&lt;img src=&#34;https://i.redd.it/3spdyw6d3wca1.png&#34; alt=&#34;&#34;&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;final-thoughts&#34;&gt;Final Thoughts&lt;/h2&gt;
+&lt;p&gt;Switching from macOS to Arch Linux on a Tuxedo laptop wasn’t just a change in operating systems. It was a declaration of independence. I left behind the polish of macOS for the raw, unfiltered power of Linux—a decision that aligns with my values of simplicity, freedom, and customization.&lt;/p&gt;
+&lt;p&gt;If you’re tired of being told how to work and ready to build a system that works &lt;em&gt;for&lt;/em&gt; you, stop hesitating. &lt;strong&gt;Make the leap.&lt;/strong&gt; Arch Linux and tiling window managers will change the way you think about computing.&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>Cloudflare Tunnel and containers</title>
       <link>http://localhost:1313/posts/2ndpost/</link>

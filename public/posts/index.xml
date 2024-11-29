@@ -7,7 +7,171 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2024 Bist.be</copyright>
-    <lastBuildDate>Fri, 29 Nov 2024 13:57:07 +0100</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Nov 2024 16:25:23 +0100</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Geeklife CLI Todo List</title>
+      <link>http://localhost:1313/posts/geeklife/</link>
+      <pubDate>Fri, 29 Nov 2024 16:25:23 +0100</pubDate>
+      
+      <guid>http://localhost:1313/posts/geeklife/</guid>
+      <description>&lt;h1 id=&#34;geek-life-the-minimalists-tool-for-better-productivity&#34;&gt;Geek Life: The Minimalist’s Tool for Better Productivity&lt;/h1&gt;
+&lt;p&gt;In an age where productivity tools are bloated with features, notifications, and endless integrations, simplicity is a luxury. &lt;strong&gt;Geek Life&lt;/strong&gt;, an open-source, command-line productivity tool, offers a refreshing alternative for those who value minimalism and focus.&lt;/p&gt;
+&lt;p&gt;Whether you&amp;rsquo;re managing your tasks, building habits, or tracking time, Geek Life is a streamlined, no-frills solution for organizing your life. It caters to anyone who appreciates the elegance of minimalistic tools—especially those who prefer spending more time getting things done and less time fiddling with their tools.&lt;/p&gt;</description>
+      <content>&lt;h1 id=&#34;geek-life-the-minimalists-tool-for-better-productivity&#34;&gt;Geek Life: The Minimalist’s Tool for Better Productivity&lt;/h1&gt;
+&lt;p&gt;In an age where productivity tools are bloated with features, notifications, and endless integrations, simplicity is a luxury. &lt;strong&gt;Geek Life&lt;/strong&gt;, an open-source, command-line productivity tool, offers a refreshing alternative for those who value minimalism and focus.&lt;/p&gt;
+&lt;p&gt;Whether you&amp;rsquo;re managing your tasks, building habits, or tracking time, Geek Life is a streamlined, no-frills solution for organizing your life. It caters to anyone who appreciates the elegance of minimalistic tools—especially those who prefer spending more time getting things done and less time fiddling with their tools.&lt;/p&gt;
+&lt;p&gt;Let’s explore why Geek Life might just be the productivity tool you didn’t know you needed.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;what-is-geek-life&#34;&gt;What is Geek Life?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Geek Life&lt;/strong&gt; is a command-line productivity tool developed with the principle of simplicity at its core. Unlike feature-heavy apps that overwhelm users with options, Geek Life focuses on delivering just what you need: task management, habit tracking, and time tracking.&lt;/p&gt;
+&lt;p&gt;Its minimalist, terminal-based interface makes it lightning-fast and distraction-free, while its open-source nature ensures you can customize it to your liking.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;why-minimalism-matters-in-productivity&#34;&gt;Why Minimalism Matters in Productivity&lt;/h2&gt;
+&lt;p&gt;Minimalism in productivity tools isn’t just about aesthetics—it’s about focus. Here’s why a simple tool like Geek Life can have a big impact on your workflow:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;No Distractions:&lt;/strong&gt; No pop-ups, ads, or unnecessary features. Geek Life keeps your focus on the tasks at hand.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Efficiency:&lt;/strong&gt; A lightweight design means you spend less time navigating the tool and more time accomplishing your goals.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Flexibility:&lt;/strong&gt; Minimal tools are easier to mold into your own workflow.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Peace of Mind:&lt;/strong&gt; Simplifying your systems reduces mental clutter, making productivity feel less like a chore and more like a habit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;key-features-of-geek-life&#34;&gt;Key Features of Geek Life&lt;/h2&gt;
+&lt;p&gt;Geek Life’s power lies in its simplicity. Here’s what it offers:&lt;/p&gt;
+&lt;h3 id=&#34;1-straightforward-task-management&#34;&gt;1. &lt;strong&gt;Straightforward Task Management&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add, update, and organize tasks without the hassle of navigating complicated interfaces.&lt;/li&gt;
+&lt;li&gt;Use simple commands to track deadlines, priorities, and categories.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-effective-habit-tracking&#34;&gt;2. &lt;strong&gt;Effective Habit Tracking&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Build and maintain habits by tracking your progress daily, weekly, or monthly.&lt;/li&gt;
+&lt;li&gt;Visual progress indicators keep you motivated without overwhelming you.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-time-tracking-made-simple&#34;&gt;3. &lt;strong&gt;Time Tracking Made Simple&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Log time spent on activities to understand how you’re using your day.&lt;/li&gt;
+&lt;li&gt;Ideal for personal growth, project work, or simply ensuring balance in your schedule.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4-terminal-friendly&#34;&gt;4. &lt;strong&gt;Terminal-Friendly&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;If you’re comfortable in a terminal or love the simplicity of text-based tools, Geek Life fits right in.&lt;/li&gt;
+&lt;li&gt;Its design eliminates the need for a graphical user interface, saving both time and system resources.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;5-open-source--customizable&#34;&gt;5. &lt;strong&gt;Open Source &amp;amp; Customizable&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;As an open-source tool, Geek Life gives you the freedom to modify its code or add extensions.&lt;/li&gt;
+&lt;li&gt;It’s perfect for tinkerers who want to adapt the tool to their specific needs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;how-to-get-started-with-geek-life&#34;&gt;How to Get Started with Geek Life&lt;/h2&gt;
+&lt;p&gt;Geek Life is remarkably easy to set up and start using. Here’s a quick guide:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Install Geek Life&lt;/strong&gt;&lt;br&gt;
+Clone the GitHub repository and install it using the instructions provided in the repository.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Create Your First Task&lt;/strong&gt;&lt;br&gt;
+Add tasks to your list with a simple command and track them easily.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Start Tracking Habits&lt;/strong&gt;&lt;br&gt;
+Log habits you want to build, like reading daily or exercising regularly.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Track Time Spent&lt;/strong&gt;&lt;br&gt;
+Monitor your activities to better understand how your time is distributed.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;With just these basic steps, you’re ready to begin organizing your life in a more streamlined way.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;who-should-use-geek-life&#34;&gt;Who Should Use Geek Life?&lt;/h2&gt;
+&lt;p&gt;Geek Life is ideal for anyone who values minimalism and simplicity in their productivity tools. It’s especially suited for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Minimalists:&lt;/strong&gt; If you dislike cluttered apps or interfaces, Geek Life keeps things clean and focused.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Command-Line Enthusiasts:&lt;/strong&gt; If you enjoy working in a terminal environment, this tool feels natural.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Privacy-Conscious Users:&lt;/strong&gt; Your data stays local, and the open-source code gives you full control over what happens with it.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tinkerers:&lt;/strong&gt; The customizable nature of Geek Life makes it perfect for anyone who enjoys tailoring their tools.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Whether you’re planning your day, tracking habits, or ensuring balance in your life, Geek Life helps you stay on track without complicating the process.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;why-choose-geek-life&#34;&gt;Why Choose Geek Life?&lt;/h2&gt;
+&lt;p&gt;Unlike mainstream productivity apps, Geek Life strips away distractions and delivers pure functionality. Here’s what sets it apart:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Minimalist Design:&lt;/strong&gt; A simple interface means no wasted time or cognitive overload.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Speed:&lt;/strong&gt; Terminal-based tools are inherently faster than GUI-based apps, and Geek Life is no exception.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lightweight:&lt;/strong&gt; Its small footprint makes it suitable even for older machines or low-resource environments.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Community-Driven:&lt;/strong&gt; As an open-source tool, it’s constantly evolving thanks to its community of users and contributors.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;final-thoughts&#34;&gt;Final Thoughts&lt;/h2&gt;
+&lt;p&gt;In a world filled with over-engineered productivity solutions, Geek Life stands as a testament to the power of minimalism. It offers everything you need to stay productive without the bells and whistles that often get in the way.&lt;/p&gt;
+&lt;p&gt;If you’re ready to embrace a more focused, streamlined approach to organization, give Geek Life a try. Check it out on GitHub: &lt;a href=&#34;https://github.com/ajaxray/geek-life&#34;&gt;Geek Life Repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Minimal tools, maximum results—that’s the Geek Life philosophy.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Tuxedo and Arch</title>
+      <link>http://localhost:1313/posts/tuxedo/</link>
+      <pubDate>Fri, 29 Nov 2024 15:02:49 +0100</pubDate>
+      
+      <guid>http://localhost:1313/posts/tuxedo/</guid>
+      <description>&lt;h1 id=&#34;from-macos-to-arch-linux-embracing-freedom-on-a-tuxedo-laptop&#34;&gt;From macOS to Arch Linux: Embracing Freedom on a Tuxedo Laptop&lt;/h1&gt;
+&lt;p&gt;For years, I lived in Apple’s walled garden, wielding a MacBook with macOS like a good digital citizen. It was elegant, polished, and maddeningly limiting. Over time, my frustrations grew louder than the chime on startup. I didn’t want a machine that worked &lt;em&gt;despite&lt;/em&gt; me; I wanted one that worked &lt;em&gt;with&lt;/em&gt; me. Enter the Tuxedo laptop and Arch Linux—a duo that let me reclaim control over my workflow, align with my love for Suckless software, and embrace a keyboard-driven existence.&lt;/p&gt;</description>
+      <content>&lt;h1 id=&#34;from-macos-to-arch-linux-embracing-freedom-on-a-tuxedo-laptop&#34;&gt;From macOS to Arch Linux: Embracing Freedom on a Tuxedo Laptop&lt;/h1&gt;
+&lt;p&gt;For years, I lived in Apple’s walled garden, wielding a MacBook with macOS like a good digital citizen. It was elegant, polished, and maddeningly limiting. Over time, my frustrations grew louder than the chime on startup. I didn’t want a machine that worked &lt;em&gt;despite&lt;/em&gt; me; I wanted one that worked &lt;em&gt;with&lt;/em&gt; me. Enter the Tuxedo laptop and Arch Linux—a duo that let me reclaim control over my workflow, align with my love for Suckless software, and embrace a keyboard-driven existence.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;why-i-left-macos&#34;&gt;Why I Left macOS&lt;/h2&gt;
+&lt;p&gt;At first glance, macOS seems like the perfect operating system for someone who appreciates minimalism and efficiency. It’s polished to a mirror shine, but that’s the problem: &lt;strong&gt;it’s a mirror you can’t scratch.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;heres-what-drove-me-away&#34;&gt;Here’s what drove me away:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;The Mouse-First Mentality&lt;/strong&gt;: macOS loves its trackpads, gestures, and a UX that screams &amp;ldquo;click here.&amp;rdquo; For someone like me—who thrives in a keyboard-driven workflow—this was friction I didn’t need.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Locked-In Ecosystem&lt;/strong&gt;: macOS doesn’t just assume control; it demands it. Apps behave how Apple wants, not how &lt;em&gt;I&lt;/em&gt; want.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Heavyweight Software&lt;/strong&gt;: Every macOS update seemed to bring more bloat. I didn’t want animations and notifications; I wanted lean, efficient performance.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I needed an operating system that let me strip away the unnecessary, tailor the essential, and move at the speed of thought.&lt;/p&gt;
+&lt;h2 id=&#34;httpswwwtecmintcomwp-contentuploads201904ratpoison-window-managerjpeg&#34;&gt;&lt;img src=&#34;https://www.tecmint.com/wp-content/uploads/2019/04/Ratpoison-Window-Manager.jpeg&#34; alt=&#34;&#34;&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;why-arch-and-why-tuxedo&#34;&gt;Why Arch and Why Tuxedo?&lt;/h2&gt;
+&lt;p&gt;I’ve been an &lt;strong&gt;Arch Linux&lt;/strong&gt; user for years, so the operating system choice was a no-brainer. It’s fast, endlessly customizable, and stays out of your way. What changed was my hardware.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;Tuxedo Laptop&lt;/strong&gt; caught my attention for its focus on Linux-first hardware. No more battling EFI issues or wondering if my Wi-Fi card would cooperate. With the Tuxedo, I could focus on what mattered: &lt;strong&gt;building my ideal computing environment.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;what-i-value-in-a-machine&#34;&gt;What I Value in a Machine&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Linux at Its Core&lt;/strong&gt;: No surprises here. The hardware is designed to play nice with Linux, making setup and long-term maintenance effortless.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lightweight Hardware, Heavyweight Power&lt;/strong&gt;: Whether coding, gaming, or configuring yet another dotfile, the Tuxedo InfinityBook strikes the perfect balance.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;httpswwwtuxedocomputerscomstore_files1imagesproduct_imagesextrapulse14-gen4_herobannerjpg&#34;&gt;&lt;img src=&#34;https://www.tuxedocomputers.com/store_files/1/images/product_images/extra/pulse14-gen4_herobanner.jpg&#34; alt=&#34;&#34;&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;why-tiling-window-managers&#34;&gt;Why Tiling Window Managers?&lt;/h2&gt;
+&lt;p&gt;If there’s a polar opposite to macOS’s glossy, window-dragging interface, it’s a tiling window manager. I’ve always been drawn to the simplicity and efficiency of tools like &lt;strong&gt;dwm&lt;/strong&gt; and &lt;strong&gt;bspwm&lt;/strong&gt;. Why? Because they do &lt;em&gt;exactly&lt;/em&gt; what I want and nothing more.&lt;/p&gt;
+&lt;h3 id=&#34;the-tiling-philosophy&#34;&gt;The Tiling Philosophy&lt;/h3&gt;
+&lt;p&gt;A tiling window manager is a statement: &lt;strong&gt;My workflow isn’t an afterthought. It’s the foundation.&lt;/strong&gt; Everything is organized, spatially consistent, and instantly accessible. With a few keystrokes, I can summon, move, or close windows without ever reaching for the mouse.&lt;/p&gt;
+&lt;p&gt;It’s not just about speed; it’s about &lt;strong&gt;autonomy.&lt;/strong&gt; In the tiling world, &lt;em&gt;you&lt;/em&gt; decide the layout. Contrast this with macOS’s love affair with floating windows, where apps constantly demand to be resized and repositioned.&lt;/p&gt;
+&lt;h2 id=&#34;httpsrepository-imagesgithubusercontentcom405523738035273b6-276a-4837-a94c-1ebaf4d4c8e8&#34;&gt;&lt;img src=&#34;https://repository-images.githubusercontent.com/405523738/035273b6-276a-4837-a94c-1ebaf4d4c8e8&#34; alt=&#34;&#34;&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;suckless-software-and-minimalism&#34;&gt;Suckless Software and Minimalism&lt;/h2&gt;
+&lt;p&gt;For someone like me—who loves Suckless software—the shift away from macOS felt inevitable. Tools like &lt;strong&gt;dwm&lt;/strong&gt;, &lt;strong&gt;st&lt;/strong&gt;, and &lt;strong&gt;dmenu&lt;/strong&gt; embody everything I want in software:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Minimalist Code&lt;/strong&gt;: If you can’t read and understand the source, is it even yours? Suckless software is lean, hackable, and designed to be configured at the source level.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Keyboard-Driven Workflows&lt;/strong&gt;: Everything is a keystroke away. The mouse? It’s just another dust collector on my desk.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Philosophical Alignment&lt;/strong&gt;: These tools don’t try to be everything for everyone. They do one thing exceptionally well, and they let &lt;em&gt;you&lt;/em&gt; handle the rest.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Moving to a Tuxedo laptop running Arch allowed me to double down on these principles. My setup is now a reflection of &lt;em&gt;me&lt;/em&gt;, not the whims of a corporation.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;living-the-dream-my-keyboard-centric-workflow&#34;&gt;Living the Dream: My Keyboard-Centric Workflow&lt;/h2&gt;
+&lt;p&gt;Switching to a Tuxedo laptop running Arch wasn’t just a hardware upgrade; it was a lifestyle upgrade. Every piece of my workflow is optimized for efficiency:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Neovim for Coding&lt;/strong&gt;: With Lua configurations and plugins tailored to my needs, Neovim is the ultimate development environment.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;dwm for Window Management&lt;/strong&gt;: No unnecessary UI elements, no wasted pixels—just pure productivity.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Custom Keybindings&lt;/strong&gt;: Everything from launching applications to controlling media happens via the keyboard.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Self-Hosted Tools&lt;/strong&gt;: From running containers to managing Kubernetes clusters, my Tuxedo laptop is the command center for all my projects.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This setup makes macOS feel like a toy in comparison. It’s not just faster; it’s smarter. It works how &lt;em&gt;I&lt;/em&gt; think, not how a UX designer thinks I should.&lt;/p&gt;
+&lt;h2 id=&#34;httpsireddit3spdyw6d3wca1png&#34;&gt;&lt;img src=&#34;https://i.redd.it/3spdyw6d3wca1.png&#34; alt=&#34;&#34;&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;final-thoughts&#34;&gt;Final Thoughts&lt;/h2&gt;
+&lt;p&gt;Switching from macOS to Arch Linux on a Tuxedo laptop wasn’t just a change in operating systems. It was a declaration of independence. I left behind the polish of macOS for the raw, unfiltered power of Linux—a decision that aligns with my values of simplicity, freedom, and customization.&lt;/p&gt;
+&lt;p&gt;If you’re tired of being told how to work and ready to build a system that works &lt;em&gt;for&lt;/em&gt; you, stop hesitating. &lt;strong&gt;Make the leap.&lt;/strong&gt; Arch Linux and tiling window managers will change the way you think about computing.&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>Returnal: A Love-Hate Relationship with a Ruthless Universe</title>
       <link>http://localhost:1313/posts/selene/</link>
@@ -20,21 +184,32 @@
       <content>&lt;p&gt;It’s 2 AM. My hands are sweating, my heart races, and I feel the weight of failure yet again. The familiar sound of my character Selene breathing heavily greets me as I rise from the wreckage of my crashed ship, Helios. Returnal—a game I hated, then loved, and hated again—is punishing, relentless, and yet utterly addictive. It’s a masterpiece that plays with your patience, sanity, and obsession with redemption.&lt;/p&gt;
 &lt;h2 id=&#34;first-steps-desperation&#34;&gt;First Steps: Desperation&lt;/h2&gt;
 &lt;p&gt;When I first launched Returnal, I was mesmerized. The hauntingly beautiful yet hostile alien planet, Atropos, immediately sucked me in. The visuals, the atmosphere, and the eerie soundscapes wrapped around me like an uncomfortable blanket. But soon, the awe turned into frustration.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.budgetgaming.nl/plaatjes/reviews/Returnal/2.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Returnal doesn’t hold your hand. It doesn’t care if you’re new to roguelikes. It throws you into a procedurally generated gauntlet of enemies and traps, demanding you learn through trial, error, and plenty of death. And die I did. Over and over again.&lt;/p&gt;
 &lt;p&gt;At first, I hated it. Dying in Returnal doesn’t just sting—it resets your progress. That powerful weapon you found? Gone. Those upgrades you worked so hard to earn? Vanished. All that’s left is the bitter taste of defeat and a nagging feeling of “What now?”&lt;/p&gt;
 &lt;p&gt;But here’s the thing: death isn’t failure in Returnal. It’s progress.&lt;/p&gt;
 &lt;h2 id=&#34;the-mental-toll-clueless-and-trapped&#34;&gt;The Mental Toll: Clueless and Trapped&lt;/h2&gt;
 &lt;p&gt;The game doesn’t just punish your mistakes; it makes you live with them. Selene, the protagonist, is trapped in a time loop, reliving her crash and subsequent journey through Atropos every time she dies. It’s not just a gameplay mechanic—it’s a psychological burden. The game immerses you in her desperation and confusion, making you feel as trapped as she is.&lt;/p&gt;
 &lt;p&gt;You’ll find fragments of her story scattered across the world, cryptic logs recorded by… well, other versions of Selene. Each discovery raises more questions than answers. Who am I chasing? Why am I here? Is this my punishment for something I can’t even remember?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.redd.it/aojd1n349hu81.jpg&#34; alt=&#34;Selene Explores Atropos&#34;&gt;&lt;/p&gt;
 &lt;p&gt;There were moments I wanted to quit. Moments where the game felt unfair, like it was laughing at me for daring to try. But every time I hit that “quit” button, I found myself back at it an hour later. Something about Returnal kept pulling me in. It wasn’t just the challenge—it was the need for closure, the burning desire to conquer Atropos and uncover the truth.&lt;/p&gt;
 &lt;h2 id=&#34;the-love-affair-addiction-to-redemption&#34;&gt;The Love Affair: Addiction to Redemption&lt;/h2&gt;
 &lt;p&gt;Once I started to accept the pain, something magical happened. I began to love the game. I started seeing patterns in the chaos, learning enemy behaviors, and mastering the tight, responsive combat. Every death became a lesson. Every respawn, a chance to improve.&lt;/p&gt;
 &lt;p&gt;There’s an intoxicating rhythm to Returnal. The fluidity of movement, the satisfaction of dodging a barrage of enemy projectiles, the thrill of finally defeating a boss that had humiliated you countless times—it’s all a symphony of challenge and reward.&lt;/p&gt;
 &lt;p&gt;And when I finally broke through to the next biome or unlocked a new piece of Selene’s fragmented story, the euphoria was unmatched. I felt like I had earned every inch of progress, every sliver of understanding. The game didn’t hand me victory on a silver platter; it made me fight tooth and nail for it. And that made it all the sweeter.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.redd.it/jnh169soaufb1.jpg&#34; alt=&#34;Selene looking for reason&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;embracing-the-cycle&#34;&gt;Embracing the Cycle&lt;/h2&gt;
 &lt;p&gt;Returnal isn’t a game you play casually. It demands your full attention, patience, and willingness to endure failure. It’s a mental battle as much as a physical one. But in its punishing loops, there’s a strange beauty. The game mirrors life in many ways—forcing you to learn from your mistakes, to persevere through hardship, and to find meaning in the struggle.&lt;/p&gt;
 &lt;p&gt;Hating and loving Returnal is part of the experience. It’s a brutal, unforgiving journey that tests your resilience and rewards your determination. And when you finally emerge victorious, you don’t just feel like you’ve beaten the game—you feel like you’ve conquered a part of yourself.&lt;/p&gt;
 &lt;p&gt;So, to anyone daring to step into Selene’s shoes: prepare for pain, embrace the chaos, and find beauty in the loop. Because in Returnal, dying isn’t the end—it’s just the beginning.&lt;/p&gt;
+
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/ov4fJmGCsZM?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
 </content>
     </item>
     
