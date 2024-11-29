@@ -2,7 +2,7 @@
 <html lang="en">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   
-    <title>Cloudflare Tunnel and container :: Bist.be</title>
+    <title>Cloudflare Tunnel and containers :: Bist.be</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -75,7 +75,7 @@
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Cloudflare Tunnel and container">
+<meta property="og:title" content="Cloudflare Tunnel and containers">
 <meta property="og:description" content="How to setup a cloudflare tunnel using your docker-compose file" />
 <meta property="og:url" content="http://localhost:1313/posts/2ndpost/" />
 <meta property="og:site_name" content="Bist.be" />
@@ -173,7 +173,7 @@
     
 <article class="post">
   <h1 class="post-title">
-    <a href="http://localhost:1313/posts/2ndpost/">Cloudflare Tunnel and container</a>
+    <a href="http://localhost:1313/posts/2ndpost/">Cloudflare Tunnel and containers</a>
   </h1>
   <div class="post-meta"><time class="post-date">28-11-2024</time></div>
 
@@ -194,57 +194,64 @@
   
 
   <div class="post-content"><div>
-        <p>ecuring access to internally hosted applications is crucial, especially for applications that shouldn’t be directly exposed to the internet. Cloudflare Tunnel provides a secure, encrypted connection by creating an outbound tunnel from your network to Cloudflare’s infrastructure, eliminating the need to open external ports. With Docker Compose, setting up a Cloudflare Tunnel becomes straightforward and manageable within a few configuration steps.</p>
+        <p>Securing access to internally hosted applications is crucial, especially for applications that shouldn’t be directly exposed to the internet. Cloudflare Tunnel provides a secure, encrypted connection by creating an outbound tunnel from your network to Cloudflare’s infrastructure, eliminating the need to open external ports. With Docker Compose, setting up a Cloudflare Tunnel becomes straightforward and manageable within a few configuration steps.</p>
 <p>In this guide, we’ll walk through setting up Cloudflare Tunnel, configuring it with Docker Compose, and securing sensitive information using environment variables.</p>
-<p>Step 1: Set Up Your Cloudflare Tunnel</p>
+<h2 id="step-1-set-up-your-cloudflare-tunnel">Step 1: Set Up Your Cloudflare Tunnel<a href="#step-1-set-up-your-cloudflare-tunnel" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>Create the Tunnel
 Log in to your Cloudflare account, then go to Zero Trust &gt; Access &gt; Tunnels.
 Click Create a Tunnel and provide a unique name for your tunnel. Naming the tunnel after your application or project can make it easier to manage.</p>
 <p>Find the Tunnel Token
 After creating the tunnel, Cloudflare generates a unique Tunnel Token. This token is required for authorizing the cloudflared service (Cloudflare’s connector) to establish a secure connection between Cloudflare and your application.
 The token can be found on the Tunnel Details page under Credentials. Copy this token; you’ll need it to set up the tunnel securely in Docker Compose.</p>
-<p>Step 2: Securely Store the Tunnel Token</p>
+<h2 id="step-2-securely-store-the-tunnel-token">Step 2: Securely Store the Tunnel Token<a href="#step-2-securely-store-the-tunnel-token" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>To prevent exposing sensitive information within your docker-compose.yaml file, store the TUNNEL_TOKEN in a .env file. Using environment variables in Docker Compose allows for a cleaner and more secure configuration, especially if you share or version your configuration files.</p>
 <p>Create a .env file
 In the root directory of your project (where your Docker Compose file is located), create a new file named .env.</p>
 <p>Add the Tunnel Token
 Open the .env file and add your Tunnel Token like this:</p>
-<pre><code>            TUNNEL_TOKEN=your_cloudflare_tunnel_token_here
-
-             Replace your_cloudflare_tunnel_token_here with the actual token you copied from the Tunnel Details page.
-</code></pre>
+<pre tabindex="0"><code>TUNNEL_TOKEN=your_cloudflare_tunnel_token_here
+</code></pre><p>Replace your_cloudflare_tunnel_token_here with the actual token you copied from the Tunnel Details page.</p>
 <p>This approach keeps your Docker Compose file free of sensitive data, as Docker Compose will automatically load variables from the .env file.</p>
-<p>Step 3: Configure Docker Compose with Cloudflare Tunnel</p>
+<h2 id="step-3-configure-docker-compose-with-cloudflare-tunnel">Step 3: Configure Docker Compose with Cloudflare Tunnel<a href="#step-3-configure-docker-compose-with-cloudflare-tunnel" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>With the token securely stored, you’re ready to configure the Docker Compose file. The following example docker-compose.yaml file includes both your application and the cloudflared tunnel service.</p>
-<p>services:
-app:
-image: your_app_image:latest  # Replace with your application’s Docker image
-ports:
-- &ldquo;8080:8080&rdquo;  # Map the application port</p>
-<p>cloudflared:
-image: cloudflare/cloudflared:latest
-command: tunnel &ndash;no-autoupdate run
-environment:
-- TUNNEL_TOKEN=${TUNNEL_TOKEN}
-restart: unless-stopped</p>
-<p>Explanation of the Configuration:</p>
+<pre tabindex="0"><code>services:
+  app:
+    image: your_app_image:latest  # Replace with your application’s Docker image
+    ports:
+      - &#34;8080:8080&#34;  # Map the application port
+
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    command: tunnel --no-autoupdate run
+    environment:
+      - TUNNEL_TOKEN=${TUNNEL_TOKEN}
+    restart: unless-stopped
+</code></pre><h3 id="explanation-of-the-configuration">Explanation of the Configuration:<a href="#explanation-of-the-configuration" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>App Service: This service represents your internal application. Replace your_app_image with the Docker image for your app. Adjust the ports according to your application’s setup.</p>
 <p>Cloudflared Service: The cloudflared service uses the official Cloudflare Docker image. The command tunnel &ndash;no-autoupdate run instructs Cloudflare to start and maintain the tunnel connection. The TUNNEL_TOKEN environment variable retrieves the token from the .env file, authorizing the secure tunnel.</p>
 <p>Restart Policy: Setting restart: unless-stopped ensures the tunnel service automatically restarts if it stops unexpectedly, maintaining consistent connectivity.</p>
-<p>Step 4: Run Docker Compose</p>
+<h2 id="step-4-run-docker-compose">Step 4: Run Docker Compose<a href="#step-4-run-docker-compose" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>With your Docker Compose file configured, it’s time to deploy your application along with the Cloudflare Tunnel.</p>
 <p>Start Docker Compose
 Run the following command to start all services:</p>
-<p>docker-compose up -d</p>
-<p>The -d flag runs the services in detached mode, allowing them to continue running in the background.</p>
+<pre tabindex="0"><code>docker-compose up -d
+</code></pre><p>The -d flag runs the services in detached mode, allowing them to continue running in the background.</p>
 <p>Verify the Tunnel Connection
 Open your Cloudflare dashboard, go to Zero Trust &gt; Access &gt; Tunnels, and you should see your tunnel listed as active.
 You can now access your internal application through the secure Cloudflare Tunnel, with Cloudflare handling all HTTPS traffic and network security.</p>
-<p>Benefits of Using Cloudflare Tunnel with Docker Compose</p>
+<p><strong>Benefits of Using Cloudflare Tunnel with Docker Compose</strong></p>
+<ul>
+<li>
 <p>Improved Security: By eliminating open ports and using a secure outbound tunnel, Cloudflare Tunnel reduces your application’s exposure and minimizes security risks.</p>
+</li>
+<li>
 <p>Automatic HTTPS: Cloudflare automatically applies HTTPS to all traffic routed through the tunnel, ensuring end-to-end encryption without extra configuration.</p>
+</li>
+<li>
 <p>Simplicity: Using Docker Compose to manage both your application and the tunnel service in a single configuration file simplifies deployment and maintenance.</p>
-<p>Final Thoughts</p>
+</li>
+</ul>
+<h2 id="final-thoughts">Final Thoughts<a href="#final-thoughts" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>Integrating Cloudflare Tunnel with Docker Compose provides a robust solution for securely accessing internal applications. By leveraging a .env file to manage the Tunnel Token, you maintain security best practices while keeping your configuration modular and manageable. This setup offers a streamlined approach to secure application access and simplifies the configuration needed to protect sensitive resources behind a Cloudflare-managed tunnel.</p>
 
       </div></div>

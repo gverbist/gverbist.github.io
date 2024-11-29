@@ -14,19 +14,25 @@
     <loc>http://localhost:1313/posts/2ndpost/</loc>
     <lastmod>2024-11-28T21:05:37+01:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/docker/</loc>
+    <lastmod>2024-11-28T21:05:37+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/linux/</loc>
+    <lastmod>2024-11-28T21:05:37+01:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-11-28T21:05:37+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/self-hosting/</loc>
+    <lastmod>2024-11-28T21:05:37+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-11-28T21:05:37+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/pages/about/</loc>
     <lastmod>2024-11-28T21:02:03+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/firstpost/</loc>
-    <lastmod>2024-11-28T18:24:18+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/linux/</loc>
-    <lastmod>2024-11-28T18:24:18+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-11-28T18:24:18+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
