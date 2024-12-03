@@ -7,7 +7,96 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2024 Bist.be</copyright>
-    <lastBuildDate>Fri, 29 Nov 2024 16:25:23 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Dec 2024 20:47:57 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configuring SSH on your CISCO Switch</title>
+      <link>http://localhost:1313/posts/sshcisco/</link>
+      <pubDate>Tue, 03 Dec 2024 20:47:57 +0100</pubDate>
+      
+      <guid>http://localhost:1313/posts/sshcisco/</guid>
+      <description>&lt;h1 id=&#34;configuring-ssh-on-a-cisco-2960-switch&#34;&gt;Configuring SSH on a Cisco 2960 Switch&lt;/h1&gt;
+&lt;p&gt;Configuring Secure Shell (SSH) on a Cisco Catalyst 2960 switch enhances security by encrypting remote administrative access, effectively replacing less secure protocols like Telnet. This guide provides a step-by-step approach to setting up SSH on your Cisco 2960 switch.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;Before configuring SSH, ensure the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;User Authentication&lt;/strong&gt;: Configure user authentication for local or remote access.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hostname and Domain Name&lt;/strong&gt;: Assign a unique hostname and domain name to the switch.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RSA Key Pair&lt;/strong&gt;: Generate an RSA key pair for encryption purposes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;configuration-steps&#34;&gt;Configuration Steps&lt;/h2&gt;
+&lt;h3 id=&#34;1-access-the-switch&#34;&gt;1. Access the Switch&lt;/h3&gt;
+&lt;p&gt;Connect to the switch using a console cable and access the command-line interface (CLI).&lt;/p&gt;</description>
+      <content>&lt;h1 id=&#34;configuring-ssh-on-a-cisco-2960-switch&#34;&gt;Configuring SSH on a Cisco 2960 Switch&lt;/h1&gt;
+&lt;p&gt;Configuring Secure Shell (SSH) on a Cisco Catalyst 2960 switch enhances security by encrypting remote administrative access, effectively replacing less secure protocols like Telnet. This guide provides a step-by-step approach to setting up SSH on your Cisco 2960 switch.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;Before configuring SSH, ensure the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;User Authentication&lt;/strong&gt;: Configure user authentication for local or remote access.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hostname and Domain Name&lt;/strong&gt;: Assign a unique hostname and domain name to the switch.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RSA Key Pair&lt;/strong&gt;: Generate an RSA key pair for encryption purposes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;configuration-steps&#34;&gt;Configuration Steps&lt;/h2&gt;
+&lt;h3 id=&#34;1-access-the-switch&#34;&gt;1. Access the Switch&lt;/h3&gt;
+&lt;p&gt;Connect to the switch using a console cable and access the command-line interface (CLI).&lt;/p&gt;
+&lt;h3 id=&#34;2-enter-global-configuration-mode&#34;&gt;2. Enter Global Configuration Mode&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;enable
+configure terminal
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;3-set-the-hostname&#34;&gt;3. Set the Hostname&lt;/h2&gt;
+&lt;p&gt;Assign a unique hostname to identify the switch:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;hostname [Your_Switch_Name]
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;4-configure-the-domain-name&#34;&gt;4. Configure the Domain Name&lt;/h2&gt;
+&lt;p&gt;Set the domain name for the switch:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ip domain-name [your_domain.com]
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;5-generate-the-rsa-key-pair&#34;&gt;5. Generate the RSA Key Pair&lt;/h2&gt;
+&lt;p&gt;Create the RSA keys necessary for SSH encryption:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;crypto key generate rsa
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;When prompted, specify a modulus size of at least 1024 bits for enhanced security.&lt;/p&gt;
+&lt;h2 id=&#34;6-configure-user-authentication&#34;&gt;6. Configure User Authentication&lt;/h2&gt;
+&lt;p&gt;Define a local user account with a secure password:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;username [admin] privilege 15 secret [Your_Strong_Password]
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;7-enable-ssh-on-virtual-terminal-vty-lines&#34;&gt;7. Enable SSH on Virtual Terminal (VTY) Lines&lt;/h2&gt;
+&lt;p&gt;Restrict VTY lines to accept only SSH connections:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;line vty 0 15
+transport input ssh
+login local
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;8-specify-the-ssh-version&#34;&gt;8. Specify the SSH Version&lt;/h2&gt;
+&lt;p&gt;Configure the switch to use SSH version 2 for better security:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ip ssh version 2
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;9-set-ssh-parameters-optional&#34;&gt;9. Set SSH Parameters (Optional)&lt;/h2&gt;
+&lt;p&gt;Adjust SSH timeouts and authentication retries as needed:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ip ssh timeout [120]
+ip ssh authentication-retries [3]
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;10-save-the-configuration&#34;&gt;10. Save the Configuration&lt;/h2&gt;
+&lt;p&gt;Ensure all settings are saved to the startup configuration:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;copy running-config startup-config
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;verification&#34;&gt;Verification&lt;/h3&gt;
+&lt;p&gt;To confirm that SSH is configured correctly:&lt;/p&gt;
+&lt;p&gt;Check SSH Status:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;show ip ssh
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You were probably thinking this is it. And this is where all guides end the configuration. But there is more!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NOW YOU NEED TO CONFIGURE YOUR SSH CLIENT!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;11-resolving-ssh-authentication-and-cipher-issues-with-cisco-2960-switches&#34;&gt;11. Resolving SSH Authentication and Cipher Issues with Cisco 2960 Switches&lt;/h2&gt;
+&lt;p&gt;When configuring SSH on a Cisco 2960 switch, you may encounter issues with SSH authentication or ciphers. These issues are typically due to compatibility mismatches between the SSH client and the ciphers or algorithms supported by the switch. Modern SSH clients often default to more secure encryption standards, which may not align with the older ciphers supported by the Cisco 2960 switch.&lt;/p&gt;
+&lt;p&gt;To resolve these compatibility issues, you need to adjust the configuration of your SSH client by adding specific parameters to your &lt;code&gt;~/.ssh/config&lt;/code&gt; file.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;required-configuration-for-sshconfig&#34;&gt;Required Configuration for &lt;code&gt;~/.ssh/config&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;The following configuration needs to be added to your SSH client’s configuration file to ensure compatibility with the Cisco 2960 switch:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-plaintext&#34; data-lang=&#34;plaintext&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Host &amp;lt;cisco ip&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Ciphers +aes128-cbc,3des-cbc,aes192-cbc,aes256-cbc  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  KexAlgorithms +diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  HostkeyAlgorithms +ssh-rsa
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;12-connecting-with-ssh&#34;&gt;12. Connecting with SSH&lt;/h2&gt;
+&lt;p&gt;Now connect with:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ssh -l &amp;lt;username&amp;gt; &amp;lt;ip address switch&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;</content>
+    </item>
+    
     <item>
       <title>Geeklife CLI Todo List</title>
       <link>http://localhost:1313/posts/geeklife/</link>
