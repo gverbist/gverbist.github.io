@@ -2,19 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/asciiqarium/</loc>
-    <lastmod>2025-01-07T16:55:52+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-01-07T16:55:52+01:00</lastmod>
+    <lastmod>2025-01-09T07:45:20+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/linux/</loc>
-    <lastmod>2025-01-07T16:55:52+01:00</lastmod>
+    <lastmod>2025-01-09T07:45:20+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-01-07T16:55:52+01:00</lastmod>
+    <lastmod>2025-01-09T07:45:20+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/sway/</loc>
+    <lastmod>2025-01-09T07:45:20+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-01-09T07:45:20+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/unclutterwayland/</loc>
+    <lastmod>2025-01-09T07:45:20+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/asciiqarium/</loc>
     <lastmod>2025-01-07T16:55:52+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/cisco/</loc>

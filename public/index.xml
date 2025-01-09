@@ -7,7 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2024 Bist.be</copyright>
-    <lastBuildDate>Tue, 07 Jan 2025 16:55:52 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Jan 2025 07:45:20 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unclutter on wayland</title>
+      <link>http://localhost:1313/posts/unclutterwayland/</link>
+      <pubDate>Thu, 09 Jan 2025 07:45:20 +0100</pubDate>
+      
+      <guid>http://localhost:1313/posts/unclutterwayland/</guid>
+      <description>&lt;h1 id=&#34;unclutter-for-wayland&#34;&gt;Unclutter for Wayland&lt;/h1&gt;
+&lt;hr&gt;
+&lt;p&gt;Unclutter, which is commonly used to hide the mouse cursor on X11, does not work under Wayland. However, there are alternatives available for Wayland environments.&lt;/p&gt;
+&lt;p&gt;For GNOME on Wayland, you can use the “Hide Cursor” GNOME extension, which is available via the GNOME “Extension Manager.” This extension allows you to hide the mouse pointer after a period of inactivity.&lt;/p&gt;
+&lt;p&gt;Additionally, for other Wayland compositors, such as Sway, you can add the following lines to your configuration file to hide the cursor after a period of mouse inactivity:&lt;/p&gt;</description>
+      <content>&lt;h1 id=&#34;unclutter-for-wayland&#34;&gt;Unclutter for Wayland&lt;/h1&gt;
+&lt;hr&gt;
+&lt;p&gt;Unclutter, which is commonly used to hide the mouse cursor on X11, does not work under Wayland. However, there are alternatives available for Wayland environments.&lt;/p&gt;
+&lt;p&gt;For GNOME on Wayland, you can use the “Hide Cursor” GNOME extension, which is available via the GNOME “Extension Manager.” This extension allows you to hide the mouse pointer after a period of inactivity.&lt;/p&gt;
+&lt;p&gt;Additionally, for other Wayland compositors, such as Sway, you can add the following lines to your configuration file to hide the cursor after a period of mouse inactivity:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;seat seat0 hide_cursor 3000&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The number “3000” refers to the number of milliseconds, which translates to 3 seconds in this case. This method is similar to what unclutter would do on an X11 environment.&lt;/p&gt;
+&lt;p&gt;Enjoy a clutter free desktop&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>Asciiqarium - How To</title>
       <link>http://localhost:1313/posts/asciiqarium/</link>
