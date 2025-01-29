@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dotfiles on Bist.be</title>
+    <link>http://localhost:1313/tags/dotfiles/</link>
+    <description>Recent content in Dotfiles on Bist.be</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2024 Bist.be</copyright>
+    <lastBuildDate>Wed, 29 Jan 2025 11:57:42 +0100</lastBuildDate><atom:link href="http://localhost:1313/tags/dotfiles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Managing Dotfiles with GNU Stow: A Step-by-Step Guide</title>
+      <link>http://localhost:1313/posts/stow/</link>
+      <pubDate>Wed, 29 Jan 2025 11:57:42 +0100</pubDate>
+      
+      <guid>http://localhost:1313/posts/stow/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;re a developer or a power user, you&amp;rsquo;ve probably accumulated a collection of dotfiles—configuration files for tools like Neovim, Zsh, Git, and more. Managing these files can become a hassle, especially when you want to keep them synchronized across multiple machines. Enter GNU Stow, a symlink manager that simplifies the process of organizing and deploying your dotfiles.&lt;/p&gt;
+&lt;p&gt;In this blog post, I&amp;rsquo;ll walk you through the process of setting up GNU Stow to manage your dotfiles, explain how to structure your directory for packages like Neovim configurations, and show you how to push your dotfiles repository to GitHub.&lt;/p&gt;</description>
+      <content>&lt;p&gt;If you&amp;rsquo;re a developer or a power user, you&amp;rsquo;ve probably accumulated a collection of dotfiles—configuration files for tools like Neovim, Zsh, Git, and more. Managing these files can become a hassle, especially when you want to keep them synchronized across multiple machines. Enter GNU Stow, a symlink manager that simplifies the process of organizing and deploying your dotfiles.&lt;/p&gt;
+&lt;p&gt;In this blog post, I&amp;rsquo;ll walk you through the process of setting up GNU Stow to manage your dotfiles, explain how to structure your directory for packages like Neovim configurations, and show you how to push your dotfiles repository to GitHub.&lt;/p&gt;
+&lt;h1 id=&#34;what-is-gnu-stow&#34;&gt;What is GNU Stow?&lt;/h1&gt;
+&lt;p&gt;GNU Stow is a symlink farm manager. It helps you organize your dotfiles into a clean directory structure and creates symbolic links in your home directory, pointing to the actual configuration files. This makes it easy to version control your dotfiles and deploy them across different systems.&lt;/p&gt;
+&lt;h1 id=&#34;step-1-install-gnu-stow&#34;&gt;Step 1: Install GNU Stow&lt;/h1&gt;
+&lt;p&gt;Before we begin, you&amp;rsquo;ll need to install GNU Stow. On most Linux distributions, you can install it using your package manager:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+# Debian/Ubuntu
+sudo apt install stow
+
+# Fedora
+sudo dnf install stow
+
+# macOS (using Homebrew)
+brew install stow
+If you&amp;#39;re using another operating system, check your package manager or compile it from source.
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;step-2-set-up-your-dotfiles-directory&#34;&gt;Step 2: Set Up Your Dotfiles Directory&lt;/h1&gt;
+&lt;p&gt;The first step is to create a directory to store your dotfiles. This directory will act as the root of your dotfiles repository.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+mkdir ~/dotfiles
+cd ~/dotfiles
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Inside this directory, you&amp;rsquo;ll create subdirectories for each &amp;ldquo;package&amp;rdquo; of configuration files. A package is simply a collection of related dotfiles. For example, you might have a package for Neovim, another for Zsh, and so on.&lt;/p&gt;
+&lt;p&gt;Step 3: Organize Your Dotfiles into Packages
+Let&amp;rsquo;s say you want to manage your Neovim configuration. Here&amp;rsquo;s how you would structure it:&lt;/p&gt;
+&lt;p&gt;Create a directory for the Neovim package:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+mkdir -p ~/dotfiles/nvim/.config/nvim
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Move your existing Neovim configuration files into this directory:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+mv ~/.config/nvim/* ~/dotfiles/nvim/.config/nvim/
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Repeat this process for other configurations. For example, for Zsh:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+mkdir -p ~/dotfiles/zsh
+mv ~/.zshrc ~/dotfiles/zsh/
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Your directory structure should now look something like this:&lt;/p&gt;
+&lt;p&gt;~/dotfiles/
+├── nvim/
+│   └── .config/
+│       └── nvim/
+│           ├── init.lua
+│           └── lua/
+├── zsh/
+│   └── .zshrc
+Step 4: Use GNU Stow to Create Symlinks
+Now that your dotfiles are organized, you can use GNU Stow to create symlinks in your home directory.&lt;/p&gt;
+&lt;p&gt;Navigate to your dotfiles directory:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+cd ~/dotfiles
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Use Stow to create symlinks for a specific package. For example, to set up Neovim:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+stow nvim
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This will create symlinks in your home directory pointing to the files in ~/dotfiles/nvim.&lt;/p&gt;
+&lt;p&gt;Repeat for other packages:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+stow zsh
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;After running these commands, your home directory will have symlinks like ~/.config/nvim pointing to ~/dotfiles/nvim/.config/nvim.&lt;/p&gt;
+&lt;p&gt;Step 5: Verify the Symlinks
+To ensure everything is working correctly, check the symlinks:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+ls -la ~/.config/nvim
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You should see symlinks pointing to your dotfiles directory.&lt;/p&gt;
+&lt;p&gt;Step 6: Version Control with Git
+Now that your dotfiles are organized, it&amp;rsquo;s time to version control them using Git.&lt;/p&gt;
+&lt;p&gt;Initialize a Git repository in your dotfiles directory:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+cd ~/dotfiles
+git init
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Add your files and commit them:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+git add .
+git commit -m &amp;#34;Initial commit&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Step 7: Push to GitHub
+To make your dotfiles accessible from anywhere, push them to a GitHub repository.&lt;/p&gt;
+&lt;p&gt;Create a new repository on GitHub (e.g., dotfiles).&lt;/p&gt;
+&lt;p&gt;Add the remote origin:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+git remote add origin https://github.com/your-username/dotfiles.git
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Push your changes:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+git branch -M main
+git push -u origin main
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Step 8: Deploy Dotfiles on a New System
+To deploy your dotfiles on a new machine, follow these steps:&lt;/p&gt;
+&lt;p&gt;Clone your dotfiles repository:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+git clone https://github.com/your-username/dotfiles.git ~/dotfiles
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Use Stow to create symlinks:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+cd ~/dotfiles
+stow nvim
+stow zsh
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Bonus: Automating with a Script
+If you have many packages, you can automate the stowing process with a simple script:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#!/bin/
+cd ~/dotfiles
+for package in */; do
+    stow &amp;#34;$package&amp;#34;
+done
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Save this script as stow.sh, make it executable, and run it:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+chmod +x stow.sh
+./stow.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Conclusion
+Using GNU Stow to manage your dotfiles is a game-changer. It keeps your configurations organized, makes it easy to version control them, and simplifies deployment across multiple systems. By following this guide, you&amp;rsquo;ve set up a robust system for managing your dotfiles and pushed them to GitHub for easy access.&lt;/p&gt;
+&lt;p&gt;Happy coding!&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
