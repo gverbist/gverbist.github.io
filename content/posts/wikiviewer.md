@@ -13,16 +13,6 @@ readingTime = false
 hideComments = false
 +++
 
-%%---
-%%title: ""
-%%date: 2025-06-30T12:00:00Z
-%%draft: false
-%%tags: ["vimwiki", "mkdocs", "neovim", "documentation", "productivity", "arch-linux"]
-%%categories: ["productivity", "tools"]
-%%description: "How to transform your Vimwiki markdown files into a beautiful, searchable documentation website while preserving your terminal-based workflow."
-%%featured_image: ""
-%%---
-
 As someone who lives in the terminal and swears by Neovim for everything, I've built up an extensive collection of notes and documentation using [Vimwiki](https://github.com/vimwiki/vimwiki). It's an incredible tool—fast, keyboard-driven, and perfectly integrated into my Vim workflow. But there's always been one nagging limitation: sometimes you just want to *browse* your documentation, not edit it.
 
 Whether you're searching across hundreds of notes, sharing documentation with colleagues, or simply wanting a more visual way to explore your knowledge base, reading raw markdown in a terminal isn't always ideal. That's where this solution comes in—a way to have your cake and eat it too.
