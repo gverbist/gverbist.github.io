@@ -3,7 +3,7 @@ title = "Making Sense of the rEvo RMS on a Shearwater Petrel"
 date = "2026-05-30"
 author = "Bist"
 authorTwitter = ""
-cover = ""
+cover = "/revo-rms-cover.png"
 tags = ["scuba", "rebreather", "rEvo", "CCR", "Shearwater", "RMS", "diving"]
 keywords = ["rEvo RMS", "scrubber monitoring", "Shearwater Petrel", "RCT", "RST", "rebreather", "CCR scrubber", "temperature stick"]
 description = "The rEvo Monitoring System confused me for far longer than it should have. Here's what RCT, RST and all those coloured symbols actually mean — and how I use them to plan dives."
@@ -105,4 +105,4 @@ What it *did* do, once I actually understood it, was turn a screen full of crypt
 
 ---
 
-*If you want the condensed version, I also put together a printable one-page cheat sheet covering the symbols, the pre-breathe rule and the planning maths. Stick it in your save-a-dive kit.*
+*If you want the full version, I also put together a [printable guide to all of this](/rms-guide.pdf) — usage, data interpretation and the planning maths, with a one-page cheat sheet at the end. Stick it in your save-a-dive kit.*
